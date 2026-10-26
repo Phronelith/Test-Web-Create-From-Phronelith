@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakso Pak Kumis — Bakso Segar Setiap Hari</title>
+  <meta name="description" content="Bakso sapi asli, kuah kaldu gurih, mie kuning dan bihun. Pesan online, antar ke rumah." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Fraunces:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand">
+        <span class="brand-mark">🥣</span>
+        <span class="brand-text">Bakso<strong>Pak Kumis</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#menu">Menu</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#pesan">Pesan</a>
+      </nav>
+      <a href="#pesan" class="btn btn-primary btn-sm header-cta">Pesan Sekarang</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="beranda">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Buka setiap hari · 09.00 – 21.00</span>
+        <h1>Bakso sapi asli,<br /><em>kuah kaldu</em> yang bikin balik lagi.</h1>
+        <p class="lead">
+          Digiling setiap pagi dari daging sapi segar, tanpa pengawet. Disajikan panas
+          dengan mie kuning, bihun, pangsit, dan sambal bawang buatan sendiri.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+          <a href="#pesan" class="btn btn-ghost">Pesan Antar</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>100%</strong><span>Daging sapi segar</span></li>
+          <li><strong>25+</strong><span>Tahun resep turun-temurun</span></li>
+          <li><strong>4.9★</strong><span>Rating pelanggan</span></li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="bowl">
+          <div class="bowl-broth"></div>
+          <div class="meatball m1"></div>
+          <div class="meatball m2"></div>
+          <div class="meatball m3"></div>
+          <div class="noodle n1"></div>
+          <div class="noodle n2"></div>
+          <div class="noodle n3"></div>
+          <div class="steam s1"></div>
+          <div class="steam s2"></div>
+          <div class="steam s3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <h2>Menu Favorit</h2>
+        <p>Semua porsi bisa request level pedas, tambah mie, atau tanpa bihun.</p>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-name="Bakso Campur Spesial" data-price="18000">
+          <div class="menu-badge">Best Seller</div>
+          <div class="menu-emoji">🍜</div>
+          <h3>Bakso Campur Spesial</h3>
+          <p>Bakso sapi, tahu, pangsit, mie kuning, bihun, dan telur rebus.</p>
+          <div class="menu-foot">
+            <span class="price">Rp 18.000</span>
+            <button class="btn btn-add" data-add>+ Tambah</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-name="Bakso Urat Jumbo" data-price="22000">
+          <div class="menu-emoji">🥣</div>
+          <h3>Bakso Urat Jumbo</h3>
+          <p>Satu bakso urat besar dengan tekstur kenyal, kuah kaldu sapi pekat.</p>
+          <div class="menu-foot">
+            <span class="price">Rp 22.000</span>
+            <button class="btn btn-add" data-add>+ Tambah</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-name="Bakso Beranak" data-price="28000">
+          <div class="menu-badge">Favorit</div>
+          <div class="menu-emoji">🍲</div>
+          <h3>Bakso Beranak</h3>
+          <p>Bakso besar berisi bakso-bakso kecil, cocok untuk yang lapar berat.</p>
+          <div class="menu-foot">
+            <span class="price">Rp 28.000</span>
+            <button class="btn btn-add" data-add>+ Tambah</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-name="Mie Ayam Bakso" data-price="17000">
+          <div class="menu-emoji">🍝</div>
+          <h3>Mie Ayam Bakso</h3>
+          <p>Mie ayam gurih dengan topping bakso sapi dan sawi segar.</p>
+          <div class="menu-foot">
+            <span class="price">Rp 17.000</span>
+            <button class="btn btn-add" data-add>+ Tambah</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-name="Bakso Tahu" data-price="13000">
+          <div class="menu-emoji">🧆</div>
+          <h3>Bakso Tahu</h3>
+          <p>Tahu pong lembut berisi adonan bakso, disiram kuah kaldu panas.</p>
+          <div class="menu-foot">
+            <span class="price">Rp 13.000</span>
+            <button class="btn btn-add" data-add>+ Tambah</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-name="Es Teh Manis" data-price="5000">
+          <div class="menu-emoji">🧋</div>
+          <h3>Es Teh Manis</h3>
+          <p>Teh tubruk segar dengan es batu, teman wajib makan bakso.</p>
+          <div class="menu-foot">
+            <span class="price">Rp 5.000</span>
+            <button class="btn btn-add" data-add>+ Tambah</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="section section-alt" id="tentang">
+    <div class="container about-grid">
+      <div>
+        <span class="eyebrow">Sejak 1998</span>
+        <h2>Dari gerobak kecil, jadi favorit satu kampung.</h2>
+        <p>
+          Pak Kumis mulai berjualan bakso keliling dengan satu gerobak. Resep kuahnya
+          tidak pernah berubah: tulang sapi direbus lama, bawang putih, merica, dan
+          sedikit pala. Sekarang kedai kami tetap pakai bahan yang sama — segar, tanpa
+          MSG berlebihan, dan dimasak setiap hari.
+        </p>
+        <ul class="check-list">
+          <li>Daging sapi digiling sendiri setiap pagi</li>
+          <li>Kuah kaldu direbus minimal 4 jam</li>
+          <li>Tanpa pengawet dan tanpa pewarna</li>
+          <li>Bisa pesan antar lewat WhatsApp</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="about-emoji">👨‍🍳</div>
+        <blockquote>
+          “Kalau kuahnya enak, orang pasti balik lagi. Itu saja rahasianya.”
+        </blockquote>
+        <cite>— Pak Kumis, pemilik</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section class="section" id="testimoni">
+    <div class="container">
+      <div class="section-head">
+        <h2>Kata Pelanggan</h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>Baksо uratnya besar banget, kuahnya berasa kaldu sapi asli. Sudah langganan dari SMA.</p>
+          <figcaption>Rina · Pelanggan 8 tahun</figcaption>
+        </figure>
+        <figure class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>Pesan antar lewat WA cepat, masih panas sampai rumah. Sambal bawangnya juara.</p>
+          <figcaption>Dimas · Pesan antar</figcaption>
+        </figure>
+        <figure class="testi-card">
+          <div class="stars">★★★★☆</div>
+          <p>Porsinya pas, harga ramah. Anak-anak suka bakso beranaknya.</p>
+          <figcaption>Keluarga Wijaya</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PESAN -->
+  <section class="section section-dark" id="pesan">
+    <div class="container order-grid">
+      <div>
+        <h2>Pesan Antar</h2>
+        <p class="lead">
+          Pilih menu, atur jumlah, lalu kirim pesanan lewat WhatsApp. Kami konfirmasi
+          total dan estimasi pengantaran.
+        </p>
+        <div class="contact-info">
+          <div><span>📍</span> Jl. Melati No. 12, dekat pasar</div>
+          <div><span>🕘</span> Setiap hari, 09.00 – 21.00</div>
+          <div><span>📞</span> 0812-3456-7890</div>
+        </div>
+      </div>
+
+      <div class="order-card">
+        <h3>Pesanan Anda</h3>
+        <ul class="cart-list" id="cartList">
+          <li class="cart-empty" id="cartEmpty">Belum ada item. Tambahkan dari menu di atas.</li>
+        </ul>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">Rp 0</strong>
+        </div>
+
+        <form id="orderForm" class="order-form" novalidate>
+          <label>
+            Nama
+            <input type="text" name="nama" id="nama" placeholder="Nama pemesan" required />
+          </label>
+          <label>
+            Alamat
+            <textarea name="alamat" id="alamat" rows="2" placeholder="Alamat pengantaran" required></textarea>
+          </label>
+          <label>
+            Catatan
+            <input type="text" name="catatan" id="catatan" placeholder="Contoh: level pedas 2, tanpa bihun" />
+          </label>
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn" disabled>
+            Kirim Pesanan via WhatsApp
+          </button>
+          <p class="form-note" id="formNote">Tambahkan minimal 1 menu untuk memesan.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <span class="brand-mark">🥣</span>
+        <span class="brand-text">Bakso<strong>Pak Kumis</strong></span>
+      </div>
+      <p>© <span id="year"></span> Bakso Pak Kumis. Dibuat dengan sederhana, seperti resepnya.</p>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
